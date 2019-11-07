@@ -3,10 +3,14 @@ body {
   color: #333;
   font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
   line-height: 1.7;
-  letter-spacing: .05em;
+  letter-spacing: 0.05em;
 }
 
 p {
   text-align: justify;
+}
+
+ul {
+  margin-bottom: 0;
 }
 /*# sourceMappingURL=style.css.map */

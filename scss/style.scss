@@ -17,37 +17,42 @@ $black: #333;
 
 body {
   color: $black;
-  font-family:"Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+  font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ",
+    sans-serif;
   line-height: 1.7;
-  letter-spacing: .05em;
+  letter-spacing: 0.05em;
 }
 
 p {
   text-align: justify;
 }
+
+ul {
+  margin-bottom: 0;
+}
 //Layout
-	//.l-header
-	//.l-main
-	//.l-footer
+//.l-header
+//.l-main
+//.l-footer
 
 //Module
-	//Bootstrapの書き換え
-	//.btn
-	
-	//汎用クラス
-  //.img_50
-  
-  //共用パーツ
-  //.title
-	
-	//その他ほとんどのスタイル
-	//.skill-set
-	//.skill-set__item
-	//.skill-set__item--icon
-	
-	//JavaScriptのフック等
-	//.fadein
-	
+//Bootstrapの書き換え
+//.btn
+
+//汎用クラス
+//.img_50
+
+//共用パーツ
+//.title
+
+//その他ほとんどのスタイル
+//.skill-set
+//.skill-set__item
+//.skill-set__item--icon
+
+//JavaScriptのフック等
+//.fadein
+
 //State
-	//jsで付与、削除されるクラス
-	//.is-scrollin
+//jsで付与、削除されるクラス
+//.is-scrollin
