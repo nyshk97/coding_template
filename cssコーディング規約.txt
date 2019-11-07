@@ -1,0 +1,50 @@
+【大枠】
+基本の構成はSMACSS
+命名規則はBEM（B__E--M）
+Bootstrap等のルールの上書きは、Moduleの先頭
+JavaScriptのフックになるclassやidは、Moduleの末尾
+スタイルの再利用性は重視しない
+
+【詳細】
+インデントはスペース2つ
+カラーコードは3桁（#fff）
+基本的に大文字は使用しない
+不要な要素型セレクタは使わない（.text）
+0の時は単位を省略
+1以下の小数は0を省略（.8rem）
+「:」の後にスペース（margin: auto)
+プロパティはアルファベット順に書く
+要素ブロックの間は1行開ける
+タイプ属性（type="text/cssなど）は省略する
+
+
+《Base》
+	body
+	p
+
+《Layout》
+	.l-header
+	.l-main
+	.l-footer
+
+《Module》
+	//Bootstrapの書き換え
+	.btn
+	
+	//汎用クラス
+	.img_50
+	
+	//その他ほとんどのスタイル
+	.skill-set
+	.skill-set__item
+	.skill-set__item--icon
+	
+	//JavaScriptのフック等
+	.fadein
+	
+《State》
+	//jsで付与、削除されるクラス
+	.is-scrollin
+
+《Theme》
+	//基本的に使用しない
