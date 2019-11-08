@@ -1,5 +1,5 @@
 //Base
-@mixin for_sp {
+@mixin sp {
   @media screen and (max-width: 768px) {
     @content;
   }
@@ -14,6 +14,10 @@ $white: #fff;
 $l-grey: #eee;
 $d-grey: #aaa;
 $black: #333;
+
+html {
+  font-size: 10px;
+}
 
 body {
   color: $black;
