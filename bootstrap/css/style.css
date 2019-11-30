@@ -10,18 +10,12 @@ body {
   letter-spacing: 0.05em;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
 p {
   text-align: justify;
 }
 
 ul {
   margin-bottom: 0;
-  list-style: none;
 }
 
 img {
