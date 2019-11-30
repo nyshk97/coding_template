@@ -1,0 +1,52 @@
+//Base
+@mixin sp {
+  @media screen and (max-width: 768px) {
+    @content;
+  }
+}
+// .box {
+//   @include for_sp {
+//     background-color: blue;
+//   };
+// }
+
+$white: #fff;
+$l-grey: #eee;
+$d-grey: #aaa;
+$black: #333;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  color: $black;
+  font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ",
+    sans-serif;
+  line-height: 1.7;
+  letter-spacing: 0.05em;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+p {
+  text-align: justify;
+}
+
+ul {
+  margin-bottom: 0;
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+}
