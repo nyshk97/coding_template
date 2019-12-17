@@ -6,37 +6,69 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="icon" href="./favicon.ico">
   <link rel="stylesheet" href="./css/style.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <title>Hello, world!</title>
+  
 </head>
 
 <body>
   <header>
     <div class="container">
-      <h1>Hello, world!</h1>
+      <h1>Header</h1>
     </div>
   </header>
   <main class="pageTitle">
     <div class="container">
-      <h1>Hello, world!</h1>
+      <h1>Main</h1>
       <a href="#">リンク</a>
       <form action="#" class="form">
         <div class="form__group">
-          <label for="name">名前</label>
+          <label class="form__name" for="name">名前</label>
           <input type="text" class="form__txt">
         </div>
         <div class="form__group form__check">
           <input type="checkbox" class="form__check--input" id="check1">
           <label for="check1" class="form__check--label">チェックボックス</label>
         </div>
-        <input type="submit" class="btn">
+        <div class="form__group">
+          <label for="textarea" class="form__name">テキストエリア</label>
+          <textarea class="form__txt" name="" id="textarea" cols="30" rows="10"></textarea>
+        </div>
+        <div class="form__group">
+          <input id="submit" type="radio" class="form__radio" name="status">
+          <label for="submit">公開</label>
+          <input id="draft" type="radio" class="form__radio" name="status" checked>
+          <label for="draft">下書き</label>
+        </div>
+        <div class="form__group">
+          <div class="form__file">
+            <input type="file" id="01" name="01"><label for="01" id="input-label">ファイルを選択</label>
+          </div>
+        </div>
+        <a href="#" class="outlineBtn">outlineBtn</a>
+        <input type="submit" class="btn" value="btn">
       </form>
     </div>
   </main>
   <footer>
     <div class="container">
-      <h1>Hello, world!</h1>
+      <h1>Footer</h1>
     </div>
   </footer>
+
+  <!-- ファイル送信用のjquery -->
+  <script>
+    $(function () {
+      $("#01").on('change', function () {
+        var file = $(this).prop('files')[0];
+        if (!($(".filename").length)) {
+          $(".form__file").append('<span class="filename"></span>');
+        }
+        $("#input-label").addClass('changed');
+        $(".filename").html(file.name);
+      });
+    });
+  </script>
 </body>
 
 </html>
